@@ -266,38 +266,11 @@
     box-shadow: 0 0 20px rgba(178, 102, 255, 0.9);
   }
 
-  .cat-block {
-    margin: 0 auto 50px;
-  }
-
-  .cat-block img {
-    width: 100%;
-    max-width: 320px;
-    border-radius: 24px;
-    border: 2px solid rgba(178, 102, 255, 0.5);
-    box-shadow: 0 0 60px rgba(138, 43, 226, 0.6), inset 0 0 40px rgba(75, 0, 130, 0.2);
-    transition: transform 0.6s ease, box-shadow 0.6s ease;
-  }
-
-  .cat-block img:hover {
-    transform: scale(1.04);
-    box-shadow: 0 0 90px rgba(178, 102, 255, 0.85);
-  }
-
-  .cat-caption {
-    margin-top: 18px;
-    font-size: clamp(1.1rem, 3.5vw, 1.5rem);
-    color: #e0c3ff;
-    letter-spacing: 2px;
-    text-shadow: 0 0 25px rgba(178, 102, 255, 0.8);
-    font-style: italic;
-  }
-
-  .photo-block {
+  .img-block {
     margin: 20px auto 46px;
   }
 
-  .photo-block img {
+  .img-block img {
     width: 100%;
     max-width: 420px;
     border-radius: 24px;
@@ -306,75 +279,51 @@
     transition: transform 0.6s ease, box-shadow 0.6s ease;
   }
 
-  .photo-block img:hover {
+  .img-block img:hover {
     transform: scale(1.03);
     box-shadow: 0 0 90px rgba(178, 102, 255, 0.85);
   }
 
-  .photo-caption {
+  .img-caption {
     margin-top: 20px;
-    font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+    font-size: clamp(1.1rem, 3.5vw, 1.5rem);
     color: #e0c3ff;
     letter-spacing: 2px;
     text-shadow: 0 0 25px rgba(178, 102, 255, 0.8);
     font-style: italic;
+  }
+
+  .cat-block img {
+    max-width: 320px;
+  }
+
+  .cats-block img {
+    max-width: 360px;
+  }
+
+  .photo-block img {
+    max-width: 420px;
+  }
+
+  .photo3-block img {
+    max-width: 380px;
+  }
+
+  .photo4-block img {
+    max-width: 380px;
   }
 
   .photo-end {
     margin-top: 70px;
     margin-bottom: 30px;
-    opacity: 0;
-    animation: fadeIn 1.6s ease forwards 0.6s;
   }
 
   .photo-end img {
-    width: 100%;
     max-width: 560px;
-    border-radius: 24px;
-    border: 2px solid rgba(178, 102, 255, 0.5);
-    box-shadow: 0 0 60px rgba(138, 43, 226, 0.6), inset 0 0 40px rgba(75, 0, 130, 0.2);
-    transition: transform 0.6s ease, box-shadow 0.6s ease;
-  }
-
-  .photo-end img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 90px rgba(178, 102, 255, 0.85);
-  }
-
-  .photo-end-caption {
-    margin-top: 24px;
-    font-size: clamp(1.1rem, 3vw, 1.4rem);
-    color: #e0c3ff;
-    letter-spacing: 1px;
-    text-shadow: 0 0 25px rgba(178, 102, 255, 0.8);
-    font-style: italic;
   }
 
   .cats-block {
     margin: 20px auto 30px;
-  }
-
-  .cats-block img {
-    width: 100%;
-    max-width: 360px;
-    border-radius: 24px;
-    border: 2px solid rgba(178, 102, 255, 0.5);
-    box-shadow: 0 0 60px rgba(138, 43, 226, 0.6), inset 0 0 40px rgba(75, 0, 130, 0.2);
-    transition: transform 0.6s ease, box-shadow 0.6s ease;
-  }
-
-  .cats-block img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 90px rgba(178, 102, 255, 0.85);
-  }
-
-  .cats-caption {
-    margin-top: 20px;
-    font-size: clamp(1.2rem, 3.5vw, 1.6rem);
-    color: #e0c3ff;
-    letter-spacing: 2px;
-    text-shadow: 0 0 25px rgba(178, 102, 255, 0.8);
-    font-style: italic;
   }
 
   @keyframes fadeIn {
@@ -410,9 +359,9 @@
 
   <button id="play-btn" class="play-btn">🎵 нажми, чтобы включить музыку</button>
 
-  <div class="cat-block">
+  <div class="cat-block img-block">
     <img src="cat.jpg" alt="это ты, киса!!">
-    <p class="cat-caption">это ты, киса!! &lt;3</p>
+    <p class="img-caption">это ты, киса!! &lt;3</p>
   </div>
 
   <h1>спасибо, любимая дашенька</h1>
@@ -476,9 +425,9 @@
 
   <div class="big-mid">АЯ ЗНАЮ ЧТО Я ТЕБЕ НРАВЛЮСЬ)))</div>
 
-  <div class="photo-block">
+  <div class="photo-block img-block">
     <img src="photo2.jpg" alt="мы?">
-    <p class="photo-caption">мы?</p>
+    <p class="img-caption">мы?</p>
   </div>
 
   <div class="card">
@@ -517,7 +466,9 @@
     <p class="name">ты моё чудо, любимая дашенька 💜</p>
   </div>
 
-  <div class="divider"></div>
+  <div class="photo3-block img-block">
+    <img src="photo3.jpg" alt="">
+  </div>
 
   <div class="card">
     <p>
@@ -558,7 +509,10 @@
     <p class="name">я тебя очень люблю, любимая девочка 💜</p>
   </div>
 
-  <div class="divider"></div>
+  <!-- Новая картинка между блоками -->
+  <div class="photo4-block img-block">
+    <img src="photo4.jpg" alt="">
+  </div>
 
   <div class="card">
     <p>
@@ -597,14 +551,14 @@
     <span class="big">спасибо, что ты есть.</span>
   </div>
 
-  <div class="photo-end">
+  <div class="photo-end img-block">
     <img src="photo.jpg" alt="я бы хотел чтобы это были мы">
-    <p class="photo-end-caption">я бы хотел чтобы это были мы &lt;3</p>
+    <p class="img-caption">я бы хотел чтобы это были мы &lt;3</p>
   </div>
 
-  <div class="cats-block">
+  <div class="cats-block img-block">
     <img src="cats.jpg" alt="хотелось бы с тобой также..(">
-    <p class="cats-caption">хотелось бы с тобой также..(</p>
+    <p class="img-caption">хотелось бы с тобой также..(</p>
   </div>
 
   <footer>сделано с любовью и благодарностью</footer>

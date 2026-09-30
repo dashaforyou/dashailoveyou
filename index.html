@@ -266,17 +266,40 @@
     box-shadow: 0 0 20px rgba(178, 102, 255, 0.9);
   }
 
-  /* Блок с картинкой в конце */
+  .cat-block {
+    margin: 0 auto 50px;
+  }
+
+  .cat-block img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 24px;
+    border: 2px solid rgba(178, 102, 255, 0.5);
+    box-shadow: 0 0 60px rgba(138, 43, 226, 0.6), inset 0 0 40px rgba(75, 0, 130, 0.2);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+  }
+
+  .cat-block img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 90px rgba(178, 102, 255, 0.85);
+  }
+
+  .cat-caption {
+    margin-top: 18px;
+    font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+    color: #e0c3ff;
+    letter-spacing: 2px;
+    text-shadow: 0 0 25px rgba(178, 102, 255, 0.8);
+    font-style: italic;
+  }
+
   .photo-block {
-    margin-top: 70px;
-    margin-bottom: 30px;
-    opacity: 0;
-    animation: fadeIn 1.6s ease forwards 0.6s;
+    margin: 20px auto 46px;
   }
 
   .photo-block img {
     width: 100%;
-    max-width: 560px;
+    max-width: 420px;
     border-radius: 24px;
     border: 2px solid rgba(178, 102, 255, 0.5);
     box-shadow: 0 0 60px rgba(138, 43, 226, 0.6), inset 0 0 40px rgba(75, 0, 130, 0.2);
@@ -289,10 +312,67 @@
   }
 
   .photo-caption {
+    margin-top: 20px;
+    font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+    color: #e0c3ff;
+    letter-spacing: 2px;
+    text-shadow: 0 0 25px rgba(178, 102, 255, 0.8);
+    font-style: italic;
+  }
+
+  .photo-end {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 1.6s ease forwards 0.6s;
+  }
+
+  .photo-end img {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 24px;
+    border: 2px solid rgba(178, 102, 255, 0.5);
+    box-shadow: 0 0 60px rgba(138, 43, 226, 0.6), inset 0 0 40px rgba(75, 0, 130, 0.2);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+  }
+
+  .photo-end img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 90px rgba(178, 102, 255, 0.85);
+  }
+
+  .photo-end-caption {
     margin-top: 24px;
     font-size: clamp(1.1rem, 3vw, 1.4rem);
     color: #e0c3ff;
     letter-spacing: 1px;
+    text-shadow: 0 0 25px rgba(178, 102, 255, 0.8);
+    font-style: italic;
+  }
+
+  .cats-block {
+    margin: 20px auto 30px;
+  }
+
+  .cats-block img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 24px;
+    border: 2px solid rgba(178, 102, 255, 0.5);
+    box-shadow: 0 0 60px rgba(138, 43, 226, 0.6), inset 0 0 40px rgba(75, 0, 130, 0.2);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+  }
+
+  .cats-block img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 90px rgba(178, 102, 255, 0.85);
+  }
+
+  .cats-caption {
+    margin-top: 20px;
+    font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+    color: #e0c3ff;
+    letter-spacing: 2px;
     text-shadow: 0 0 25px rgba(178, 102, 255, 0.8);
     font-style: italic;
   }
@@ -329,6 +409,11 @@
   <p class="btn-hint">нажми на кнопку, я надеюсь тебе понравится)</p>
 
   <button id="play-btn" class="play-btn">🎵 нажми, чтобы включить музыку</button>
+
+  <div class="cat-block">
+    <img src="cat.jpg" alt="это ты, киса!!">
+    <p class="cat-caption">это ты, киса!! &lt;3</p>
+  </div>
 
   <h1>спасибо, любимая дашенька</h1>
   <p class="subtitle">за то, что появилась в моей жизни</p>
@@ -390,6 +475,11 @@
   </div>
 
   <div class="big-mid">АЯ ЗНАЮ ЧТО Я ТЕБЕ НРАВЛЮСЬ)))</div>
+
+  <div class="photo-block">
+    <img src="photo2.jpg" alt="мы?">
+    <p class="photo-caption">мы?</p>
+  </div>
 
   <div class="card">
     <p>
@@ -507,16 +597,20 @@
     <span class="big">спасибо, что ты есть.</span>
   </div>
 
-  <div class="photo-block">
+  <div class="photo-end">
     <img src="photo.jpg" alt="я бы хотел чтобы это были мы">
-    <p class="photo-caption">я бы хотел чтобы это были мы &lt;3</p>
+    <p class="photo-end-caption">я бы хотел чтобы это были мы &lt;3</p>
+  </div>
+
+  <div class="cats-block">
+    <img src="cats.jpg" alt="хотелось бы с тобой также..(">
+    <p class="cats-caption">хотелось бы с тобой также..(</p>
   </div>
 
   <footer>сделано с любовью и благодарностью</footer>
 </div>
 
 <script>
-  // Звёзды
   const starsBox = document.getElementById('stars');
   const count = 90;
   let html = '';
@@ -537,7 +631,6 @@
   }
   starsBox.innerHTML = html;
 
-  // Музыка
   const audio = document.getElementById('bg-music');
   const btn = document.getElementById('play-btn');
 

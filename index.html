@@ -101,12 +101,21 @@
     font-size: 3.4rem;
     animation: pulse 2.2s ease-in-out infinite;
     filter: drop-shadow(0 0 25px rgba(178, 102, 255, 0.9));
-    margin-bottom: 28px;
+    margin-bottom: 20px;
   }
 
   @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50%      { transform: scale(1.18); }
+  }
+
+  /* Маленькая надпись в начале */
+  .small-note {
+    font-size: 0.85rem;
+    color: #9a7bc4;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 12px rgba(138, 43, 226, 0.6);
   }
 
   h1 {
@@ -244,6 +253,8 @@
 
 <div class="wrap">
   <div class="heart">💜</div>
+
+  <p class="small-note">я сюда вставил возможно твою любимую песню</p>
 
   <h1>спасибо, любимая дашенька</h1>
   <p class="subtitle">за то, что появилась в моей жизни</p>

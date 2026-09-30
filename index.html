@@ -185,6 +185,31 @@
     animation: textShine 6s linear infinite;
   }
 
+  /* Большая жирная надпись по центру */
+  .big-mid {
+    font-size: clamp(1.8rem, 6vw, 3.2rem);
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    margin: 0 auto 46px;
+    padding: 30px 20px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #e0c3ff, #8a2be2, #b266ff, #d9b3ff, #8a2be2);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: textShine 6s linear infinite, pulseText 2.4s ease-in-out infinite;
+    filter: drop-shadow(0 0 25px rgba(178, 102, 255, 0.9));
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes pulseText {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.06); }
+  }
+
   .final {
     font-size: clamp(1.1rem, 3vw, 1.4rem);
     line-height: 1.9;
@@ -281,7 +306,7 @@
     <p class="name">любимая дашенька 💜</p>
   </div>
 
-  <div class="divider"></div>
+  <div class="big-mid">АЯ ЗНАЮ ЧТО Я ТЕБЕ НРАВЛЮСЬ)))</div>
 
   <div class="card">
     <p>
